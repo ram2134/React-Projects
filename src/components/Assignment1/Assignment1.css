@@ -1,0 +1,61 @@
+/* Assignment1.css */
+.profile-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f0f0f0;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.profile-image {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.profile-image img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 3px solid #007bff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.profile-image button {
+  display: block;
+  margin-top: 10px;
+  padding: 8px 16px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.profile-body {
+  text-align: center;
+}
+
+.profile-body div {
+  margin-bottom: 10px;
+}
+
+.profile-body span {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.profile-body p {
+  margin: 5px 0;
+}
+
+.profile-body button {
+  padding: 5px 10px;
+  background-color: #28a745;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}

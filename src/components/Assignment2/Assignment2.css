@@ -1,0 +1,50 @@
+/* Assignment2.css */
+.Body {
+  height: 1000px;
+}
+
+.Body-footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: #f1f1f1;
+  padding: 10px;
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.Body-footer ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.Body-footer li {
+  margin: 0 10px;
+}
+
+.Body-footer button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  color: #fff;
+}
+
+.Body-footer button.yellow {
+  background-color: rgba(191, 255, 0, 0.858);
+}
+.Body-footer button.red {
+  background-color: red;
+}
+.Body-footer button.blue {
+  background-color: blue;
+}
+.Body-footer button.purple {
+  background-color: purple;
+}
+.Body-footer button.violet {
+  background-color: violet;
+}

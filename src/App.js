@@ -1,23 +1,36 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
+import "react-tabs/style/react-tabs.css";
+import Profile from "./components/Assignment1/Assignment1";
+import BackgroundColor from "./components/Assignment2/Assignment2";
+import CustomReact from "./components/Assignment3/Assignment3.jsx";
+import ParaGenerator from "./components/Assignment4/Assignment4.jsx";
+import "./App.css";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Tabs>
+        <TabList>
+          <Tab>Profile</Tab>
+          <Tab>Background Color</Tab>
+          <Tab>Custom React</Tab>
+          <Tab>Paragraph Generator</Tab>
+        </TabList>
+
+        <TabPanel>
+          <Profile />
+        </TabPanel>
+        <TabPanel>
+          <BackgroundColor />
+        </TabPanel>
+        <TabPanel>
+          <CustomReact />
+        </TabPanel>
+        <TabPanel>
+          <ParaGenerator />
+        </TabPanel>
+      </Tabs>
     </div>
   );
 }
