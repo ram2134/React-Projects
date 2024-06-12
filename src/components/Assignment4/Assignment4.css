@@ -1,0 +1,83 @@
+/* Main container styling */
+
+.Title {
+  display: flex;
+  font-size: 2em;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #333;
+  justify-content: center;
+}
+
+.body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+input[type="text"] {
+  padding: 10px;
+  font-size: 1em;
+  margin-right: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  outline: none;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+input[type="text"]:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 1em;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+button:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
+
+.Paragraph-body {
+  margin-top: 20px;
+  padding: 20px;
+  background-color: #f8f9fa;
+  border: 1px solid #dee2e6;
+  border-radius: 5px;
+  text-align: left;
+  font-size: 1em;
+  line-height: 1.5;
+  display: flex;
+  justify-content: center;
+  box-sizing: border-box;
+  word-wrap: break-word;
+  white-space: pre-wrap; /* Ensures the text wraps nicely */
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 20px;
+  }
+
+  input[type="text"] {
+    margin-bottom: 10px;
+    width: calc(100% - 130px); /* Adjust width to fit smaller screens */
+  }
+
+  .body {
+    flex-direction: column;
+  }
+
+  .Paragraph-body {
+    width: 100%;
+  }
+}
