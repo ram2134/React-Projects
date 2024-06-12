@@ -5,6 +5,7 @@ import Profile from "./components/Assignment1/Assignment1";
 import BackgroundColor from "./components/Assignment2/Assignment2";
 import CustomReact from "./components/Assignment3/Assignment3.jsx";
 import ParaGenerator from "./components/Assignment4/Assignment4.jsx";
+import GitHubInfo from "./components/Assignment5/Assignment5.jsx";
 import "./App.css";
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
           <Tab>Background Color</Tab>
           <Tab>Custom React</Tab>
           <Tab>Paragraph Generator</Tab>
+          <Tab>GitHubInfo</Tab>
         </TabList>
 
         <TabPanel>
@@ -29,6 +31,9 @@ function App() {
         </TabPanel>
         <TabPanel>
           <ParaGenerator />
+        </TabPanel>
+        <TabPanel>
+          <GitHubInfo />
         </TabPanel>
       </Tabs>
     </div>
