@@ -1,5 +1,6 @@
 /* Basic styling for the container */
 .container {
+  justify-content: center;
   max-width: 600px;
   margin: 0 auto;
   padding: 20px;
@@ -50,6 +51,8 @@ button:hover {
 }
 
 .avatar {
+  display: flex;
+  justify-content: center;
   width: 200px;
   height: 200px;
   border-radius: 50%;
